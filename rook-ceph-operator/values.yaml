@@ -57,7 +57,7 @@ pspEnable: true
 csi:
   enableRbdDriver: true
   enableCephfsDriver: true
-  enableGrpcMetrics: false
+  enableGrpcMetrics: true
   # Set to true to enable host networking for CSI CephFS and RBD nodeplugins. This may be necessary
   # in some network configurations where the SDN does not provide access to an external cluster or
   # there is significant drop in read/write performance.

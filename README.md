@@ -15,9 +15,9 @@ cp values.yaml.orig values.yaml
 popd
 ```
 
-Installing the chart
+Install/Upgrade the chart
 ```
-helm install \
+helm upgrade -i \
   --create-namespace -n rook-ceph \
   rook-ceph \
   rook-release/rook-ceph \
@@ -37,7 +37,7 @@ popd
 
 Installing the chart
 ```
-helm install \
+helm upgrade -i \
   -n rook-ceph \
   rook-ceph-cluster \
   rook-release/rook-ceph-cluster \
